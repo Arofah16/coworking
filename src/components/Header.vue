@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <!-- <section> -->
     <v-app-bar fixed flat color="transparent"
 
     >
@@ -26,7 +26,7 @@
       </v-btn>
 
     </v-app-bar>
-  </section>
+  <!-- </section> -->
 </template>
 <script>
   // export default{
