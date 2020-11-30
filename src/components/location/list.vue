@@ -13,11 +13,11 @@
                 ></v-img>
             
                 <v-card-title>
-                  PERSONAL WORKING
+                  YOGYAKARTA
                 </v-card-title>
             
                 <v-card-subtitle>
-                  (8-10 orang) Rp 100.000/ 3 jam atau Rp 350.000/hari 
+                  Terdapat 20 Coworking Space yang tersebar di Yogyakarta  
                 </v-card-subtitle>
             
                 <v-card-actions>
@@ -25,7 +25,7 @@
                     color="orange lighten-2"
                     text
                   >
-                    More
+                     See More
                   </v-btn>
             
                   <v-spacer></v-spacer>
@@ -45,11 +45,11 @@
           ></v-img>
       
           <v-card-title>
-            VIRTUAL OFFICE
+            BALI
           </v-card-title>
       
           <v-card-subtitle>
-            (8-10 orang) Rp 100.000/ 3 jam atau Rp 350.000/hari
+            Terdapat 20 Coworking Space yang tersebar di Bali  
           </v-card-subtitle>
       
           <v-card-actions>
@@ -57,7 +57,7 @@
               color="orange lighten-2"
               text
             >
-              More
+              See More
             </v-btn>
       
             <v-spacer></v-spacer>
@@ -77,11 +77,11 @@
         ></v-img>
     
         <v-card-title>
-          MEETING SPACE
+          SEMARANG
         </v-card-title>
     
         <v-card-subtitle>
-          (8-10 orang) Rp 100.000/ 3 jam atau Rp 350.000/hari
+          Terdapat 20 Coworking Space yang tersebar di Semarang  
         </v-card-subtitle>
     
         <v-card-actions>
@@ -89,7 +89,7 @@
             color="orange lighten-2"
             text
           >
-            More
+            See More
           </v-btn>
     
           <v-spacer></v-spacer>
@@ -109,11 +109,11 @@
         ></v-img>
     
         <v-card-title>
-          MINI STUDIO PHOTO
+          BANDUNG
         </v-card-title>
     
         <v-card-subtitle>
-          Rp 60.000/ 2 jam atau Rp 100.000/ 4 jam
+          Terdapat 20 Coworking Space yang tersebar di Bandung  
         </v-card-subtitle>
     
         <v-card-actions>
@@ -121,7 +121,7 @@
             color="orange lighten-2"
             text
           >
-            More
+             See More
           </v-btn>
     
           <v-spacer></v-spacer>
