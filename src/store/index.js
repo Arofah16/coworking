@@ -5,18 +5,21 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isi:[
+    listIsi:[
       {
-        fsilitas:"",
-        orang:"",
-        waktu:"",
-        harga:""
+        fasilitas:"PUBLIC ROOM",
+        orang:"20 ORANG",
+        waktu:" 2 MINGGU",
+        harga:" 600.000"
       }
     ]
   },
   mutations: {
-    tambah(state){
-      state.isi
+    addSpace(state, data){
+      state.listIsi.push(data)
+    },
+    DELETE_space(state,index){
+      state.listIsi.splice(index,1)
     }
   },
   actions: {
