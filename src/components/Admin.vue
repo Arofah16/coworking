@@ -3,7 +3,7 @@
     <v-text-field v-model="isi.fasilitas" label="masukan fasilitas"></v-text-field>
     <v-text-field v-model="isi.orang" label="masukkan Jumlah Orang"></v-text-field>
     <v-text-field v-model="isi.waktu" label="masukkan Estimasi Waktu "></v-text-field>
-    <v-text-field v-model="isi.harga" label="masukkan Harga Sewa ">{{isi.harga}}</v-text-field>
+    <v-text-field v-model="isi.harga" label="masukkan Harga Sewa "></v-text-field>
     <v-btn color="orange" @click="addSpace">Tambah Space</v-btn>
     <v-simple-table>
       <template v-slot:default>
@@ -19,14 +19,24 @@
         </thead>
         <tbody>
           <tr v-for="(item,index) in add" :key="index">
-            <td>{{index +1}}</td>
-            <td>{{ item.fasilitas }}</td>
-            <td>{{ item.orang}}</td>
-            <td>{{ item.waktu}}</td>
-            <td>{{ item.harga}}</td>
+            <td>{{index +1}}
+            </td>
+            <td> <span v-if="showSpace" >{{ item.fasilitas}}</span>
+              <v-text-field v-if="saveSpace" v-model="editDataSpace.fasilitas" ></v-text-field>
+            </td>
+            <td> <span v-if="showSpace" >{{ item.orang}}</span>
+              <v-text-field v-if="saveSpace" v-model="editDataSpace.orang"></v-text-field>
+            </td>
+            <td><span v-if="showSpace" >{{ item.waktu}}</span>
+              <v-text-field v-if="saveSpace" v-model="editDataSpace.waktu"></v-text-field>
+            </td>
+            <td> <span v-if="showSpace" >{{ item.harga}}</span>
+              <v-text-field v-if="saveSpace" v-model="editDataSpace.harga"></v-text-field>
+            </td>
             <td>
-              <v-btn color="green">edit</v-btn>
-              <v-btn @click="deleteSpace(index)" >Hapus</v-btn>
+              <v-btn @click="saveSpaces(index)" color="primary" >save</v-btn>
+              <v-btn @click="editSpace(index)" color="green">edit</v-btn>
+              <v-btn @click="deleteSpace(index)" color="red">Hapus</v-btn>
             </td>
           </tr>
         </tbody>
@@ -45,6 +55,14 @@
           waktu: "",
           harga: ""
         },
+        saveSpace:false,
+        editDataSpace:{
+          fasilitas: "",
+          orang: "",
+          waktu: "",
+          harga: ""
+        },
+        showSpace:true
       }
     },
     computed: {
@@ -58,11 +76,25 @@
       },
       deleteSpace(index){
         this.$store.commit("DELETE_space",index)
+      },
+      editSpace(index){ 
+        this.showSpace=false
+        this.saveSpace=true;
+        this.editDataSpace.fasilitas=this.add[index].fasilitas;
+        this.editDataSpace.orang=this.add[index].orang;
+        this.editDataSpace.waktu=this.add[index].waktu;
+        this.editDataSpace.harga=this.add[index].harga;
+        // console.log(this.editDataSpace)
+      },
+      saveSpaces(index){
+        const data = this.editDataSpace
+        console.log(data)
+        this.$store.commit("EDIT_space",{index,data})
+        this.showSpace=true
+        this.saveSpace=false;
+       
+        // console.log(this.add)
       }
-      
     }
   }
 </script>
-deleteCar(car) {
-  this.$store.commit('DELETE_CAR', car);
-}

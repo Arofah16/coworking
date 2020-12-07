@@ -20,10 +20,16 @@ export default new Vuex.Store({
     },
     DELETE_space(state,index){
       state.listIsi.splice(index,1)
-    }
+    },
+    EDIT_space(state,{index,data}){
+        state.listIsi[index]=data;
+        console.log(state.listIsi)
+    },
+
   },
   actions: {
   },
   modules: {
   }
 })
+
