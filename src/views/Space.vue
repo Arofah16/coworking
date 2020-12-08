@@ -2,15 +2,14 @@
     <div class="mt-16">
     <h1 class="mt-16" style="text-align:center;">
     Daftar Kategori </h1>
-    <List/>
+    <card/>
 </div>
 </template>
-
 <script>
-    import List from '@/components/home/list'
+    import card from '@/components/space/Card'
     export default{
         components:{
-            List
+            card
         }
     }
 </script>

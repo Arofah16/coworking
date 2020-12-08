@@ -25,7 +25,7 @@
                     your business forward.
                 </p>
 
-                <v-btn>BOOK NOW</v-btn>
+                <v-btn to="/home/Book">BOOK NOW</v-btn>
 
             </v-col>
         </v-row>

@@ -2,7 +2,7 @@
   <div class="home">
     <Section1/>
     <Section2/>
-    <List/>
+    <card/>
     <Section3/>
   </div>
 </template>
@@ -11,7 +11,7 @@
 import Section1 from '@/components/home/Section1';
 import Section2 from '@/components/home/Section2';
 import Section3 from '@/components/home/Section3';
-import List from '@/components/home/list';
+import card from '@/components/space/Card'
 
 export default {
   name: 'Home',
@@ -19,7 +19,7 @@ export default {
     Section1,
     Section2,
     Section3,
-    List
+    card
   }
 }
 </script>

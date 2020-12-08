@@ -34,6 +34,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "space" */ '../views/Location.vue')
   },
+  {
+    path: '/home/Book',
+    name: '/home/Book',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "space" */ '../components/home/Book.vue')
+  },
 ]
 
 const router = new VueRouter({
