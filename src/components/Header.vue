@@ -18,7 +18,7 @@
       <v-btn text color="black" class="text-capitalize" link to="/location">
         LOCATION
       </v-btn>
-      <v-btn text color="black" class="text-capitalize ">
+      <v-btn text color="black" class="text-capitalize " link to="/galery">
         GALLERY
       </v-btn>
       <v-btn text color="black" class="text-capitalize " link to="/admin">

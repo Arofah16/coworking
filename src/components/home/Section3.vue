@@ -74,7 +74,7 @@
             ></v-img> -->
         
             <v-card-title>
-              About Us
+              About 
             </v-card-title>
         
             <v-card-subtitle>
