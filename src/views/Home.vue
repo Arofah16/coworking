@@ -11,7 +11,7 @@
 import Section1 from '@/components/home/Section1';
 import Section2 from '@/components/home/Section2';
 import Section3 from '@/components/home/Section3';
-import card from '@/components/space/Card';
+import card from '@/components/space/Card1';
 
 export default {
   name: 'Home',

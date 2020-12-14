@@ -32,16 +32,17 @@
                         <v-container>
                             <v-row>
                                 <v-col cols="12">
-                                    <v-text-field label="Nama"></v-text-field>
+                                    <v-text-field v-model="form.nama" label="Nama"></v-text-field>
                                 </v-col>
                                 <v-col cols="12">
-                                    <v-text-field label="Email" required></v-text-field>
+                                    <v-text-field v-model="form.email" label="Email" required></v-text-field>
                                 </v-col>
                                 <v-col cols="12">
-                                    <v-text-field label="No. HP" required></v-text-field>
+                                    <v-text-field v-model="form.HP" label="No. HP" required></v-text-field>
                                 </v-col>
                                 <v-col cols="12">
-                                    <v-text-field label="Tanggal Booking" required></v-text-field>
+                                    <v-text-field v-model="form.booking" label="Tanggal Booking" required>
+                                    </v-text-field>
                                 </v-col>
                             </v-row>
                         </v-container>
@@ -53,7 +54,7 @@
                             <v-btn color="primary" text @click="dialog = false">
                                 Batal
                             </v-btn>
-                            <v-btn color="primary" text @click="dialog = false">
+                            <v-btn color="primary" text @click="save">
                                 Simpan
                             </v-btn>
                         </v-card-actions>
@@ -64,10 +65,29 @@
     </section>
 </template>
 <script>
+import {mapGetters} from 'vuex'
+
     export default {
         data() {
             return {
-                dialog: false
+                dialog: false,
+                form: {
+                    nama: "",
+                    email: "",
+                    HP: "",
+                    booking: "",
+                }
+            }
+        },
+        computed: {
+            ...mapGetters([
+                'getPendaftar'
+            ])
+        },
+        methods: {
+            save(){
+                this.$store.dispatch('addPendaftar', this.form)
+                console.log(this.getPendaftar)
             }
         }
     }

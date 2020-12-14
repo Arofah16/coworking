@@ -6,7 +6,7 @@
 </div>
 </template>
 <script>
-    import card from '@/components/space/Card'
+    import card from '@/components/space/Card1'
     export default{
         components:{
             card

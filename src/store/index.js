@@ -13,7 +13,8 @@ export default new Vuex.Store({
         waktu:" 2 MINGGU",
         harga:" 600.000"
       }
-    ]
+    ],
+    pendaftar: []
   },
   mutations: {
     addSpace(state, data){
@@ -26,11 +27,19 @@ export default new Vuex.Store({
         state.listIsi[index]=data;
         console.log(state.listIsi)
     },
-
+    addPendaftar(state, payload){
+      return state.pendaftar.push(payload)
+    }
   },
-  actions: {
+  actions: { 
+    addPendaftar({commit}, payload){
+      commit('addPendaftar', payload)
+    }
   },
-  modules: {
+  getters: {
+    getPendaftar(state){
+      return state.pendaftar
+    }
   }
 })
 
