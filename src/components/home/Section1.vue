@@ -55,7 +55,7 @@
                                 Batal
                             </v-btn>
                             <v-btn color="primary" text @click="save">
-                                Simpan
+                                Simpan 
                             </v-btn>
                         </v-card-actions>
                     </v-card>
@@ -70,7 +70,8 @@ import {mapGetters} from 'vuex'
     export default {
         data() {
             return {
-                dialog: false,
+                dialog:false,
+                yes:true,
                 form: {
                     nama: "",
                     email: "",

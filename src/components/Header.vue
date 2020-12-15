@@ -28,30 +28,3 @@
     </v-app-bar>
   <!-- </section> -->
 </template>
-<script>
-  // export default{
-  //   name:"home",
-  //   data:()=>({
-  //     scrollPosition: null,
-  //   }),
-  //   computed:{
-  //     change_color(){
-  //       return this.scrollPosition > 200;
-  //     },
-  //   },
-  //   method:{
-  //     updatescroll(){
-  //       return this.scrollPosition = window.scrollY;
-  //     },
-  //   },
-  //   mouted(){
-  //     window.addEventListener("scroll",this.updatescroll);
-  //   },
-  // };
-</script>
-<style scoped>
-  /* .change-color {
-  background-color: red;
-} */
-
-</style>

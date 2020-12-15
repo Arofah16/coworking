@@ -22,6 +22,28 @@
 
         </v-card>
       </v-col>
+      <v-col cols="3">
+        <v-card class="mx-auto" max-width="250">
+          <v-img src="@/assets/private.jpg" height="200px"></v-img>
+
+          <v-card-title>
+            Semarang
+          </v-card-title>
+
+          <v-card-subtitle>
+            Semarang mempunyai beberapa tempat coworking yang sangat nyaman 
+            </v-card-subtitle>
+
+          <v-card-actions>
+            <v-btn color="orange lighten-2" text>
+              lihat selengkapnya </v-btn>
+
+            <v-spacer></v-spacer>
+
+          </v-card-actions>
+
+        </v-card>
+      </v-col>
     </v-row>
   </container>
 </template>
