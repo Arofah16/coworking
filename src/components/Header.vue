@@ -13,7 +13,7 @@
         HOME
       </v-btn>
       <v-btn text color="black" class="text-capitalize " link to="/space">
-        SPACE
+        FACILITY
       </v-btn>
       <v-btn text color="black" class="text-capitalize" link to="/location">
         LOCATION
