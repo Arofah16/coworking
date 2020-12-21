@@ -24,14 +24,14 @@
       </v-col>
       <v-col cols="3">
         <v-card class="mx-auto" max-width="250">
-          <v-img src="@/assets/private.jpg" height="200px"></v-img>
+          <v-img src="@/assets/ruang-rapat.jpg" height="200px"></v-img>
 
           <v-card-title>
-            Semarang
+            Ruang Rapat
           </v-card-title>
 
           <v-card-subtitle>
-            Semarang mempunyai beberapa tempat coworking yang sangat nyaman 
+            Disediakan sebuah ruang rapat maksimal peserta 20 orang , full AC, Proyektor
             </v-card-subtitle>
 
           <v-card-actions>
@@ -49,11 +49,11 @@
           <v-img src="@/assets/private.jpg" height="200px"></v-img>
 
           <v-card-title>
-            Semarang
+            Privat Room
           </v-card-title>
 
           <v-card-subtitle>
-            Semarang mempunyai beberapa tempat coworking yang sangat nyaman 
+            Tersedia sebuah Meja dan 3 buah tempat duduk yang nyaman
             </v-card-subtitle>
 
           <v-card-actions>
@@ -68,14 +68,14 @@
       </v-col>
       <v-col cols="3">
         <v-card class="mx-auto" max-width="250">
-          <v-img src="@/assets/private.jpg" height="200px"></v-img>
+          <v-img src="@/assets/ruang-rapat1.jpg" height="200px"></v-img>
 
           <v-card-title>
-            Semarang
+            Cafetaria
           </v-card-title>
 
           <v-card-subtitle>
-            Semarang mempunyai beberapa tempat coworking yang sangat nyaman 
+            Meyediakan Cafe  
             </v-card-subtitle>
 
           <v-card-actions>
