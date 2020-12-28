@@ -71,7 +71,6 @@ import {mapGetters} from 'vuex'
         data() {
             return {
                 dialog:false,
-                yes:true,
                 form: {
                     nama: "",
                     email: "",

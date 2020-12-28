@@ -14,7 +14,8 @@ export default new Vuex.Store({
         harga:" 600.000"
       }
     ],
-    pendaftar: []
+    pendaftar: [],
+    galeri:[]
   },
   mutations: {
     addSpace(state, data){

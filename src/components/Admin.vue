@@ -1,11 +1,11 @@
 <template>
   <div>
-    <v-text-field v-model="isi.fasilitas" label="masukan fasilitas"></v-text-field>
+    <!-- <v-text-field v-model="isi.fasilitas" label="masukan fasilitas"></v-text-field>
     <v-text-field v-model="isi.orang" label="masukkan Jumlah Orang"></v-text-field>
     <v-text-field v-model="isi.waktu" label="masukkan Estimasi Waktu "></v-text-field>
     <v-text-field v-model="isi.harga" label="masukkan Harga Sewa "></v-text-field>
-    <v-btn color="orange" @click="addSpace">Tambah Space</v-btn>
-    <v-simple-table>
+    <v-btn color="orange" @click="addSpace">Tambah Space</v-btn> -->
+    <!-- <v-simple-table>
       <template v-slot:default>
         <thead>
           <tr>
@@ -43,7 +43,7 @@
         <v-divider></v-divider>
 
       </template>
-    </v-simple-table>
+    </v-simple-table> -->
     <h3>Daftar Booking </h3>
     <v-simple-table>
       <thead>
